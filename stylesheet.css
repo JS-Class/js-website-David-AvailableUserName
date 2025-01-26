@@ -1,0 +1,50 @@
+/*No errors given when validated*/
+
+h2 
+{
+    color: rgb(15, 170, 15);
+    text-align: center;
+    padding-top: 15px;
+}
+
+h3 
+{
+    color: rgb(15, 170, 15);
+    padding-top: 30px;
+}
+
+h6 
+{
+    color: rgb(15, 170, 15);
+    padding-top: 30px;
+}
+
+body 
+{
+    /*This sets text color, whitespace color, and text alignment*/
+    background-color: rgb(15, 15, 15);
+    color: rgb(34, 139, 34);
+    text-align: left;
+
+    /*This will control everything to do with fonts and font thickness*/
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-size: large;
+    font-weight: 400;
+
+    line-height: normal;
+
+    /*This controls the whitespace thickness on various sides of the body section*/
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+p 
+{
+    text-indent: 20px;
+}
+
+span.lists
+{
+    color: rgb(15, 170, 15);
+}
