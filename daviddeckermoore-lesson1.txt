@@ -1,3 +1,0 @@
-1. Does workload Isolation offer separate nodes for operational and analytical queries?
-*a) True
-b) false

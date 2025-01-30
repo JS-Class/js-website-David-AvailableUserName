@@ -39,6 +39,18 @@ body
     padding-right: 30px;
 }
 
+nav
+{
+    color: rgb(15, 170, 15);
+    
+}
+
+nav li
+{
+    display: inline;
+    padding-right: 15px;
+}
+
 p 
 {
     text-indent: 20px;
