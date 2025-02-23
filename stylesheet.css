@@ -86,7 +86,19 @@ span.lists
     color: rgb(15, 170, 15);
 }
 
-footer
+/*footer
 {
-    /*Eventually this will sit at the bottom of the webpage, whenever I figure out how*/
+    //Eventually this will sit at the bottom of the webpage, whenever I figure out how
+}*/
+
+table
+{
+    border: solid 2px rgb(15, 170, 15);
+    border-collapse: collapse;
+}
+
+tr, td, th
+{
+    border: solid 2px rgb(15, 170, 15);
+    padding: 10px;
 }
