@@ -27,22 +27,85 @@
     <body> <!--Body contains and displays information onto the webpage-->
         <!--This is the main body-->
 
-        <h3>Course Overview</h3>
-        <p>
-            Pizza order form will go here.
+        <h3>Pizza Orders</h3>
+        <h5>Not a real pizza ordering site.</h5>
 
-            <!-- 
-            customer name /Text Input
-            address /Texxt Input
-            phone number /Text Input
-            pizza size choice (at least 3) "Small, Medium, Large, X-Large" /Radial Points
-            topping choices (at least 5) "Sausage, Pepperoni, Bacon, Extra Cheese, Mushrooms, All Toppings" /Check Boxes
-            (Extra) Crust Style "Stuffed Crust, No Stuffed Crust" /Radial Points
-            notes to the cook /Text Box
-            (Extra) Delivery Notes /Text Box
-            -->
+        <!--This handles everything about creating and displaying whats needed for the pizza order form-->
+        <form id="pizza_order" action="" method="post">
 
-        </p>
+            Please fill out your order.
+            <br>    <br>
+
+            <!--The name, address, and phone number text fields are set and displayed here-->
+            Name: <input type="text" name="orderName" id="orderName" maxlength="50" autofocus>
+            <br> 
+            <!--I set the maxlength to 50 because the longest US based address is around 40 and this covers any unforeseen problems-->
+            Address: <input type="text" name="deliveryAddress" id="deliveryAddress" maxlength="50">
+            <br>
+            Phone Number: <input type="text" name="orderContact" id="orderContact" maxlength="10">
+
+            <br>    <br>
+
+            <!--All possible pizza sizes are set, displayed, and labeled here-->
+            <fieldset>
+                Size: <input type="radio" name="pizzaSize" id="small">
+                    <label for="small">small</label>
+                <input type="radio" name="pizzaSize" id="medium">
+                    <label for="medium">medium</label>
+                <input type="radio" name="pizzaSize" id="large">
+                    <label for="large">large</label>
+                <input type="radio" name="pizzaSize" id="x-large">
+                    <label for="x-large">x-large</label>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <!--All possible pizza toppings are set, displayed, and labeled here-->
+            Toppings: <input type="checkbox" name="toppings" id="Sausage">
+                <label for="Sausage">Sausage</label>
+            <input type="checkbox" name="toppings" id="Pepperoni">
+                <label for="Pepperoni">Pepperoni</label>
+            <input type="checkbox" name="toppings" id="Bacon">
+                <label for="Bacon">Bacon</label>
+            <input type="checkbox" name="toppings" id="Extra Cheese">
+                <label for="Extra Cheese">Extra Cheese</label>
+            <input type="checkbox" name="toppings" id="Mushrooms">
+                <label for="Mushrooms">Mushrooms</label>
+            <input type="checkbox" name="toppings" id="Ham">
+                <label for="Ham">Ham</label>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <!--The crust options are set, displayed, and labeled here-->
+            Crust Style: <input type="radio" name="crustStyle" id="StuffedCrust">
+                <label for="StuffedCrust">Stuffed Crust</label>
+            <input type="radio" name="crustStyle" id="PlainCrust">
+                <label for="PlainCrust">Plain Crust</label>
+            </fieldset>
+            
+            <br>    <br>
+
+            <!--Additional written text boxes are set and displayed here-->
+            Instructions to the Cook: 
+            <br>
+            <textarea name="specialRequirements" id="specialRequirements" cols="35" rows="8"></textarea>
+
+            <br>    <br>
+
+            Delivery Instructions: <br>
+            <textarea name="deliveryInstructions" id="deliveryInstructions" cols="35" rows="8"></textarea>
+
+            <br>    <br>
+
+            <!--The submit order button is set and displayed here-->
+            <!--It is currently disabled as it is not mentioned as a requirement, and as it does not actually lead anywhere-->
+
+            <!--<input type="submit" value="Place Order.">-->
+
+        </form>
 
         <footer>
             <h6>Copyright &copy; 2025 David Decker-Moore</h6>

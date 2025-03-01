@@ -102,3 +102,8 @@ tr, td, th
     border: solid 2px rgb(15, 170, 15);
     padding: 10px;
 }
+
+fieldset
+{
+    border: solid rgb(34, 139, 34);
+}
