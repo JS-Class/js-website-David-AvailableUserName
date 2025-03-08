@@ -11,6 +11,8 @@ h3
 {
     color: rgb(15, 170, 15);
     padding-top: 30px;
+
+    clear: both;
 }
 
 h6 
@@ -37,6 +39,18 @@ body
     /*This controls the whitespace thickness on various sides of the body section*/
     padding-left: 30px;
     padding-right: 30px;
+
+    margin-left: 20em;
+    margin-right: 20em;
+}
+
+img
+{
+    /*This wraps text and any other visual aspects around any image*/
+    float: left;
+
+    /*Gives whitespace to remove touching elements for a cleaner layout*/
+    margin: 15px;
 }
 
 nav
