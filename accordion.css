@@ -1,0 +1,86 @@
+/*css that handles how the accordion looks in every aspect*/
+
+h3.acrdnh3
+{
+	color: rgb(15, 170, 15);
+    padding-top: 0px;
+
+    clear: both;
+}
+
+.wrapper{
+	max-width: 800px;
+	width: 100%;
+	margin: 50px auto;
+}
+
+.wrapper .title{
+	margin-bottom: 25px;
+	background: rgb(30, 15, 15);
+	padding: 20px;
+	text-align: center;
+	color: rgb(34, 139, 34);
+	text-transform: uppercase;
+	border-radius: 2px;
+}
+
+.wrapper .accordion_item{
+	margin-bottom: 25px;
+	box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+.wrapper .accordion_item .accordion_tab{
+	background: rgb(30, 15, 15);
+	padding: 20px;
+	color: rgb(34, 139, 34);
+	cursor: pointer;
+	position: relative;
+	transition: all 0.3s ease;
+}
+
+.wrapper .accordion_item .accordion_tab.active{
+	color: rgb(34, 139, 34);
+	background: rgb(30, 15, 15);
+}
+
+.wrapper .accordion_item .accordion_tab .arrow{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 20px;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: rgb(153, 0, 0);
+}
+
+.wrapper .accordion_item .accordion_tab .arrow img.acrdn{
+	position: absolute;
+	top: -8%;
+	left: -11%;
+	transform: translate(-50%,-50%);
+	width: 13px;
+	height: 13px;
+}
+
+.wrapper .accordion_item .accordion_tab.active .arrow img.acrdn{
+	transform: translate(-50%,-50%) rotate(180deg);
+	transition: all 0.3s ease;
+}
+
+.wrapper .accordion_item .accordion_content{
+	background: rgb(15, 15, 15);
+	display: none;
+	transition: all 0.3s ease;
+}
+
+.wrapper .accordion_item .accordion_content {
+	line-height: 22px;
+	padding: 20px;
+	color: rgb(34, 139, 34); 
+}
+
+.wrapper .accordion_item .accordion_tab.active + .accordion_content{
+	display: block;	
+	transition: all 0.3s ease;
+}

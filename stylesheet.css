@@ -1,0 +1,123 @@
+/*No errors given when validated*/
+
+h2 
+{
+    color: rgb(15, 170, 15);
+    text-align: center;
+    padding-top: 15px;
+}
+
+h3 
+{
+    color: rgb(15, 170, 15);
+    padding-top: 30px;
+
+    clear: both;
+}
+
+h6 
+{
+    color: rgb(15, 170, 15);
+    padding-top: 30px;
+}
+
+body 
+{
+    /*This sets text color, whitespace color, and text alignment*/
+    background-color: rgb(15, 15, 15);
+    color: rgb(34, 139, 34);
+    text-align: left;
+
+    /*This will control everything to do with fonts and font thickness*/
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-size: large;
+    font-weight: 400;
+
+    line-height: normal;
+
+    /*This controls the whitespace thickness on various sides of the body section*/
+    padding-left: 30px;
+    padding-right: 30px;
+
+    margin-left: 20em;
+    margin-right: 20em;
+}
+
+img
+{
+    /*This wraps text and any other visual aspects around any image*/
+    float: left;
+
+    /*Gives whitespace to remove touching elements for a cleaner layout*/
+    margin: 15px;
+}
+
+nav
+{
+    color: rgb(15, 170, 15);
+    
+    display: block;
+}
+
+nav li
+{
+    display: inline;
+    padding-right: 15px;
+    list-style-type: none;
+}
+
+nav a:link
+{
+    color: rgb(15, 170, 15);
+    text-decoration: none;
+}
+
+nav a:visited
+{
+    color: rgb(15, 170, 15);
+}
+
+nav a:hover
+{
+    color: rgb(15, 170, 15);
+    text-decoration: underline;
+}
+
+nav a:active
+{
+    color: rgb(5, 197, 5);
+    text-decoration: underline;
+}
+
+p 
+{
+    text-indent: 20px;
+}
+
+span.lists
+{
+    color: rgb(15, 170, 15);
+}
+
+/*footer
+{
+    //Eventually this will sit at the bottom of the webpage, whenever I figure out how
+}*/
+
+table
+{
+    border: solid 2px rgb(15, 170, 15);
+    border-collapse: collapse;
+}
+
+tr, td, th
+{
+    border: solid 2px rgb(15, 170, 15);
+    padding: 10px;
+}
+
+fieldset
+{
+    border: solid rgb(34, 139, 34);
+}
