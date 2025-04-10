@@ -7,7 +7,23 @@
         <meta name="description" content="Webpage about David">
         <meta name="keywords" content="Northwest State Community College, David, ">
 
+        <!--CSS dictates what and how things appear on the website-->
+        <link rel="stylesheet" href="accordion.css">
         <link rel="stylesheet" href="stylesheet.css">
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script><!--necessary jquery link to allow accordion to work-->
+
+        <script>//javascript that sets the function of the accordion
+            $(document).ready(function(){
+                $(".accordion_tab").click(function(){
+                    $(".accordion_tab").each(function(){
+                    $(this).removeClass("active");
+                    });
+                    $(this).addClass("active");
+                    $(this).next().addClass("active");
+                });
+            });
+        </script>
 
         <title>Personal WebPage</title> <!--Title displays information within the page tab-->
     </head>
@@ -28,118 +44,169 @@
             </ul>
         </nav>
 
-        <main>
+        <main><!--The main holds everythings within the webpage-->
 
-            <div><!--A div to hold everything relating to the introduction-->
+            <div class="wrapper"><!--each div wrapper holds an entire accordion piece-->
+                <div><!--A div to hold everything relating to the introduction-->
 
-                <h3>Introductions</h3>
+                    <div class="accordion_wrapper">
 
-                <p>
-                        Starting off, my name is David. I am currently enrolled in college for Computer Programming 
-                    as my major. This webpage will be talking about my interests, my goals, and other basic 
-                    information about me as a person. All of this information will be broken into sections that 
-                    go further indepth.
-                    
-                </p>
-
+                        <div class="accordion_item">
+                            <div class="accordion_tab"><h3 class="acrdnh3">Introductions</h3>
+                                <div class="arrow">
+                                    <img class="acrdn" src="arrow.png" alt="arrow">
+                                </div>
+                            </div>
+                
+                            <div class="accordion_content">
+                                <p>
+                                    Starting off, my name is David. I am currently enrolled in college for Computer Programming 
+                                as my major. This webpage will be talking about my interests, my goals, and other basic 
+                                information about me as a person. All of this information will be broken into sections that 
+                                go further indepth.
+                                
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div><!--A div to hold everything relating to me-->
+            
+            <div class="wrapper">
+                <div><!--A div to hold everything relating to me-->
 
-                <h3>Things About Me</h3>
+                    <div class="accordion_wrapper">
+                        <div class="accordion_item">
+                            <div class="accordion_tab"><h3 class="acrdnh3">Things About Me</h3>
+                                <div class="arrow">
+                                    <img class="acrdn" src="arrow.png" alt="arrow">
+                                </div>
+                            </div>
+                
+                            <div class="accordion_content">
+                                <p>
+                                        As stated before my name is David and I am into Computer Programming. I initially got into 
+                                    Computer Programming at Four County where I went through my last two years of highschool. 
+                                    I then went straight into college the following year following that same path into 
+                                    Computer Programming. The start of college was a rough start for me, but at this point I am 
+                                    holding strong and I am performing much better than when I first started. 
+                                    <br>
+                                        Since I went into collge straight from highschool, I am obviosly not as old as probably a majority of 
+                                    other students if I am to go off of my previous classes students. With that said, I am currently 21 years old and 
+                                    if it matters to anybody, my height is also 6'1. 
+                                    <br>
+                                        With the basic information out of the way, I can now talk about why I wanted to go into Computer Programming
+                                    and what I enjoy about it. I started at Four County of course, and when I was deciding on what I wanted to do, a 
+                                    big reason for deciding on Computer Programming was mostly because I thought it would be fun. I also can't 
+                                    disclude the allure of a high paying job sitting in air conditioning or even the potential of game design and development.
+                                    While those reasons still hold some weight in why I decided to continue into college, they are not as important now 
+                                    after I have figured out what I want to do in life. 
+                                        For now my main reasons are that I am genuinely interested and do find programming to be fun, but the visual feedback and 
+                                    seeing my work build into a game is my main focus. So with that I decided that Computer Programming would help me the most 
+                                    because it would allow me to get jobs essentially everywhere in order to always have a way to provide for myself, but would 
+                                    also set me up in knowing the foundations of what I will need for making games and anything else I may find intereset in, in the future.
+                                    <br>
+                                        Now it wouldn't be complete in telling you about myself without some sort of image to follow so I will be including one here 
+                                    of myself below.
+                                </p>
 
-                <p>
-                        As stated before my name is David and I am into Computer Programming. I initially got into 
-                    Computer Programming at Four County where I went through my last two years of highschool. 
-                    I then went straight into college the following year following that same path into 
-                    Computer Programming. The start of college was a rough start for me, but at this point I am 
-                    holding strong and I am performing much better than when I first started. 
-                    <br>
-                        Since I went into collge straight from highschool, I am obviosly not as old as probably a majority of 
-                    other students if I am to go off of my previous classes students. With that said, I am currently 21 years old and 
-                    if it matters to anybody, my height is also 6'1. 
-                    <br>
-                        With the basic information out of the way, I can now talk about why I wanted to go into Computer Programming
-                    and what I enjoy about it. I started at Four County of course, and when I was deciding on what I wanted to do, a 
-                    big reason for deciding on Computer Programming was mostly because I thought it would be fun. I also can't 
-                    disclude the allure of a high paying job sitting in air conditioning or even the potential of game design and development.
-                    While those reasons still hold some weight in why I decided to continue into college, they are not as important now 
-                    after I have figured out what I want to do in life. 
-                        For now my main reasons are that I am genuinely interested and do find programming to be fun, but the visual feedback and 
-                    seeing my work build into a game is my main focus. So with that I decided that Computer Programming would help me the most 
-                    because it would allow me to get jobs essentially everywhere in order to always have a way to provide for myself, but would 
-                    also set me up in knowing the foundations of what I will need for making games and anything else I may find intereset in, in the future.
-                    <br>
-                        Now it wouldn't be complete in telling you about myself without some sort of image to follow so I will be including one here 
-                    of myself below.
-                </p>
-
-                    <img src="Selfie.jpg" alt="Personal Selfie" height="424" width="318">
-
+                                <p>
+                                    <img src="Selfie.jpg" alt="Personal Selfie" height="424" width="318">
+                                </p>
+                                <!--NTS fix image intersecting accordion before uploading-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div><!--A div to hold everything relating to my interests-->
+            <div class="wrapper">
+                <div><!--A div to hold everything relating to my interests-->
 
-                <h3>Basic Interests</h3>
+                    <div class="accordion_wrapper">
 
-                <p>
-                        Everyone knows people aren't solely interested in college, or the courses they're enrolled in, but 
-                    that they also have other interests. So with that a few of my interests would include.
-
-                    
-                    <ul>
-                        <!--When validated shows that "Span" may not be child of "ul", however when placed outside it no longer affects the included text-->
-                        <!--I will have to change this at a later date once I figure out how to properly set it up-->
-                        <span class="lists">
-                            <li>Reading</li>
-                            <li>Gaming</li>
-                            <li>Game Development</li>
-                            <li>fantasy themes</li>
-                            <li>And Sweets</li>
-                        </span>
-
-                    </ul>
-
-                        When it comes to reading I have been a major bookworm since before middleschool after I learned that I liked actual reading
-                    rather than picture books. I used to hate reading and right before it started to impact my learning I found out I wanted to 
-                    <em>read</em> what I found interesting and not stare at images. This of course caused it's own problems because appearantly 
-                    reading two or three grade levels above your current grade at atleast two books a week, every week until graduation isn't normal.
-                    So yeah, I <em>really</em> like reading.
-                    <br>
-                        I am going to tie in fantasy and gaming into this next part because they go hand in hand. Fantasy also heavily relates to my reading, but 
-                    in terms of games at least I have been playing games for a much longer time. So obviosly fantasy has worked it's way into my interests
-                    along with other sub genres of fantasy or even mixed genres, such as modern/fansty. The majority of games I am interested in however
-                    is usually shooter games. I do also enjoy racing, open world, survival, and even darksouls style games. 
-                    <br>
-                        Now when it comes to game development I actually drift to different games than what I persoanlly play most of the time. 
-                    I don't have any real projects at this moment because until recently I haven't had the capabilities to even try. However, 
-                    for ideas that I've written down as I have had them, they typically drift towards more exploration styled games. I'm getting off topic 
-                    with that though, and what actually interests me about game development is the persoanl feedback I get from it. Being able to see 
-                    a game be created as I do things, and having instant feedback whenever I break something or fix something while being able to see 
-                    what is happening in front of my eyes, rather than random error messages and abrupt crashes in other programs. I get a massive amount 
-                    of satisfaction fron creating a game. 
-                    <br>
-                        I obviously have to include food of some sort in my interests. For me that food is sweets, or really anything with a likely unhealthy amount 
-                    of sugar in it. So candy, cake, brownies, losts of pastries, other baked goods, and also drinks such as pop or I would include juices as well,
-                    even though juice is healthy. For my entire life I have had a severe sweet tooth and have always loved sweet tasting food, with my all time 
-                    favorite being peanut butter fudge. 
-
-                </p>
-                <!--When validated an error is given for line 119 stating the paragraph start/end does not match, but that is wrong, so it is a false negative-->
+                        <div class="accordion_item">
+                            <div class="accordion_tab"><h3 class="acrdnh3">Basic Interests</h3>
+                                <div class="arrow">
+                                    <img class="acrdn" src="arrow.png" alt="arrow">
+                                </div>
+                            </div>
+                
+                            <div class="accordion_content">
+                                <p>
+                                        Everyone knows people aren't solely interested in college, or the courses they're enrolled in, but 
+                                    that they also have other interests. So with that a few of my interests would include.
+            
+                                    
+                                    <ul>
+                                        <!--When validated shows that "Span" may not be child of "ul", however when placed outside it no longer affects the included text-->
+                                        <!--I will have to change this at a later date once I figure out how to properly set it up-->
+                                        <span class="lists">
+                                            <li>Reading</li>
+                                            <li>Gaming</li>
+                                            <li>Game Development</li>
+                                            <li>fantasy themes</li>
+                                            <li>And Sweets</li>
+                                        </span>
+            
+                                    </ul>
+            
+                                        When it comes to reading I have been a major bookworm since before middleschool after I learned that I liked actual reading
+                                    rather than picture books. I used to hate reading and right before it started to impact my learning I found out I wanted to 
+                                    <em>read</em> what I found interesting and not stare at images. This of course caused it's own problems because appearantly 
+                                    reading two or three grade levels above your current grade at atleast two books a week, every week until graduation isn't normal.
+                                    So yeah, I <em>really</em> like reading.
+                                    <br>
+                                        I am going to tie in fantasy and gaming into this next part because they go hand in hand. Fantasy also heavily relates to my reading, but 
+                                    in terms of games at least I have been playing games for a much longer time. So obviosly fantasy has worked it's way into my interests
+                                    along with other sub genres of fantasy or even mixed genres, such as modern/fansty. The majority of games I am interested in however
+                                    is usually shooter games. I do also enjoy racing, open world, survival, and even darksouls style games. 
+                                    <br>
+                                        Now when it comes to game development I actually drift to different games than what I persoanlly play most of the time. 
+                                    I don't have any real projects at this moment because until recently I haven't had the capabilities to even try. However, 
+                                    for ideas that I've written down as I have had them, they typically drift towards more exploration styled games. I'm getting off topic 
+                                    with that though, and what actually interests me about game development is the persoanl feedback I get from it. Being able to see 
+                                    a game be created as I do things, and having instant feedback whenever I break something or fix something while being able to see 
+                                    what is happening in front of my eyes, rather than random error messages and abrupt crashes in other programs. I get a massive amount 
+                                    of satisfaction fron creating a game. 
+                                    <br>
+                                        I obviously have to include food of some sort in my interests. For me that food is sweets, or really anything with a likely unhealthy amount 
+                                    of sugar in it. So candy, cake, brownies, losts of pastries, other baked goods, and also drinks such as pop or I would include juices as well,
+                                    even though juice is healthy. For my entire life I have had a severe sweet tooth and have always loved sweet tasting food, with my all time 
+                                    favorite being peanut butter fudge. 
+            
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div><!--A div to hold everything relating to my goals-->
+            <div class="wrapper">
+                <div><!--A div to hold everything relating to my goals-->
 
-                <h3>Basic Goals</h3>
+                    <div class="accordion_wrapper">
 
-                <p>
-                    For my goals I really don't have too many at this point in time, and the ones I do have are rather basic. For starters I want to finsih 
-                    college. That is a very simple goal. I want to eventually get the one game project that I am working on to a public playable point. 
-                    As an addon I also want to create a personal website for that game. As of right now, those are my main goals in their simplest forms. I 
-                    do have much longer term goals that I honestly won't be able to approach for years to come, and some of these goals I have broken 
-                    up into smaller goals for myself to keep me on track, but for now I don't need to go into that much detail when they really only affect me.
-                </p>
-
+                        <div class="accordion_item">
+                            <div class="accordion_tab"><h3 class="acrdnh3">Basic Goals</h3>
+                                <div class="arrow">
+                                    <img class="acrdn" src="arrow.png" alt="arrow">
+                                </div>
+                            </div>
+                
+                            <div class="accordion_content">
+                                <p>
+                                    For my goals I really don't have too many at this point in time, and the ones I do have are rather basic. For starters I want to finsih 
+                                    college. That is a very simple goal. I want to eventually get the one game project that I am working on to a public playable point. 
+                                    As an addon I also want to create a personal website for that game. As of right now, those are my main goals in their simplest forms. I 
+                                    do have much longer term goals that I honestly won't be able to approach for years to come, and some of these goals I have broken 
+                                    up into smaller goals for myself to keep me on track, but for now I don't need to go into that much detail when they really only affect me.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </main>
@@ -150,8 +217,7 @@
 
         </footer>
 
+        
     </body>
-
-
 
 </html>
